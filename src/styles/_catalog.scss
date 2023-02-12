@@ -1,23 +1,25 @@
+@import "./variables";
+
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(1, $card-width);
   justify-content: center;
   gap: 48px;
   max-width: 487px;
   margin: 0 auto;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $card-width);
     max-width: 767px;
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $card-width);
     max-width: 1023px;
   }
   
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $card-width);
     max-width: 1023px;
   }
 
@@ -25,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: $card-width;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
